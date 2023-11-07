@@ -28,6 +28,10 @@ header {
   width: 50px;
 }
 
+.menu-opener {
+  display: none;
+}
+
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -270,7 +274,7 @@ footer {
   box-shadow: 0px 5px 10px rgba(61, 61, 61, 0.897);
 }
 
-.section-sevces {
+.section-services {
   display: flex;
 }
 
@@ -927,4 +931,301 @@ footer {
 .section-map--info-item-img img {
   width: 15px;
   height: auto;
+}
+
+@media (min-width: 450px) and (max-width: 800px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .menu-opener {
+    display: block;
+    width: 1.5rem;
+    margin-right: 30px;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 70vw;
+    height: calc(100vh - 300px);
+    top: 100px;
+    right: 0;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu ul li a {
+    font-weight: bold;
+    height: 80px;
+    font-size: 25px;
+    margin-left: 50px;
+    border: 0;
+  }
+
+  .menu .active a {
+    border: 0;
+    color: #b28756;
+  }
+
+  .section-aboutus {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .section-aboutus--left {
+    margin: 0 30px 30px 30px;
+  }
+
+  .section-aboutus--right {
+    width: auto;
+  }
+
+  .section-services {
+    flex-wrap: wrap;
+  }
+
+  .section-service {
+    min-width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .section-service:last-child {
+    border-right: 0;
+  }
+
+  .section-team {
+    max-width: 580px;
+  }
+
+  .section-companies .section-companies--area {
+    flex-wrap: wrap;
+  }
+
+  .section-company {
+    min-width: 30%;
+    margin-bottom: 30px;
+  }
+
+  .section-prices .prices {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  .section-premium {
+    flex-direction: column;
+  }
+
+  .section-facts {
+    flex-wrap: wrap;
+  }
+
+  .section-fact {
+    min-width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .section-contact {
+    max-width: 450px;
+  }
+
+  .section-map {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .section-map--info {
+    width: auto;
+  }
+
+  .section-map--area {
+    width: auto;
+  }
+
+  .footer--area {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 449px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .menu-opener {
+    display: block;
+    width: 1.5rem;
+    margin-right: 30px;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80vw;
+    height: calc(100vh - 140px);
+    top: 100px;
+    right: 0;
+  }
+
+  .banner h1 {
+    font-size: 35px;
+  }
+
+  .banner h2 {
+    font-size: 15px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu ul li a {
+    font-weight: bold;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 30px;
+    border: 0;
+  }
+
+  .menu .active a {
+    border: 0;
+    color: #b28756;
+  }
+
+  .section-aboutus {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .section-aboutus--left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 0 30px 30px 30px;
+  }
+
+  .section-aboutus--right {
+    width: auto;
+    margin: 0 30px 0 30px;
+  }
+
+  .section-aboutus--right img {
+    width: 100%;
+  }
+
+  .section-projects--photo {
+    width: 350px;
+  }
+
+  .section-projects--photoarea {
+    width: 330px;
+    height: auto;
+  }
+
+  .section-services {
+    flex-wrap: wrap;
+  }
+
+  .section-service {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .section-service:last-child {
+    border-right: 0;
+  }
+
+  .section-projects---filtros {
+    margin: 0 30px 0 30px;
+  }
+  .section-projects---filtros ul li {
+    font-size: 16.05px;
+  }
+
+  .section-projects---filtros ul li:nth-child(4) {
+    border-left: 0;
+  }
+
+  .section-team {
+    max-width: 280px;
+  }
+
+  .section-companies .section-companies--area {
+    flex-wrap: wrap;
+  }
+
+  .section-company {
+    min-width: 50%;
+    margin-bottom: 40px;
+  }
+
+  .section-prices .prices {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  .section-premium {
+    flex-direction: column;
+  }
+
+  .section-premium--boxes img {
+    width: 80%;
+  }
+
+  .section-premium--features {
+    margin: 0 30px 0 30px;
+  }
+
+  .section-premium--features p {
+    width: auto;
+  }
+
+  .section-facts {
+    flex-wrap: wrap;
+  }
+
+  .section-fact {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .section-share {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .section-share--item {
+    width: 18%;
+  }
+
+  .section-contact {
+    max-width: 280px;
+  }
+
+  .section-map {
+    padding: 0 0 260px 0;
+  }
+
+  .section-map--info {
+    width: auto;
+  }
+
+  .section-map--area {
+    width: auto;
+  }
+
+  .footer--area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+  }
 }
