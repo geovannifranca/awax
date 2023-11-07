@@ -1015,6 +1015,10 @@ footer {
     row-gap: 30px;
   }
 
+  .section-prices .prices .price {
+    margin-right: 0;
+  }
+
   .section-premium {
     flex-direction: column;
   }
@@ -1170,6 +1174,10 @@ footer {
   .section-prices .prices {
     flex-wrap: wrap;
     row-gap: 30px;
+  }
+
+  .section-prices .prices .price {
+    margin-right: 0;
   }
 
   .section-premium {
